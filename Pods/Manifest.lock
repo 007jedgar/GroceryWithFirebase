@@ -17,10 +17,12 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Kingfisher (3.5.1)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
+  - Kingfisher (~> 3.0)
 
 SPEC CHECKSUMS:
   Firebase: 85a581fb04e44f63ae9f4fbc8d6dabf4a4c18653
@@ -29,7 +31,8 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
   FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Kingfisher: 12eeffeef42ea45b68c5e5acfe8ba9005b713ab4
 
-PODFILE CHECKSUM: f13ef372f5d9d629372be83b9ffa279752911dad
+PODFILE CHECKSUM: acd7eb17b6898e6efb136ef7e0090bdcf5242ef9
 
 COCOAPODS: 1.2.0

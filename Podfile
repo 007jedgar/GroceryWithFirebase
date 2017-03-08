@@ -10,4 +10,6 @@ target 'GroceryWithFirebase' do
   # Pods for GroceryWithFirebase
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'Kingfisher', '~> 3.0'
+
 end
