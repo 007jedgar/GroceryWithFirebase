@@ -14,6 +14,9 @@
 		ABF7285A1E70962F00212912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF728591E70962F00212912 /* Assets.xcassets */; };
 		ABF7285D1E70962F00212912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF7285B1E70962F00212912 /* LaunchScreen.storyboard */; };
 		ABF728651E70968200212912 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = ABF728641E70968200212912 /* GoogleService-Info (2).plist */; };
+		ABF728671E70A8EB00212912 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF728661E70A8EB00212912 /* CategoryTableViewController.swift */; };
+		ABF728691E70A90300212912 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF728681E70A90300212912 /* ListTableViewController.swift */; };
+		ABF7286B1E70A92800212912 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7286A1E70A92800212912 /* AddCategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		ABF7285C1E70962F00212912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABF7285E1E70962F00212912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABF728641E70968200212912 /* GoogleService-Info (2).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (2).plist"; sourceTree = "<group>"; };
+		ABF728661E70A8EB00212912 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		ABF728681E70A90300212912 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		ABF7286A1E70A92800212912 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
 		E0C2C386F77DED923080A468 /* Pods-GroceryWithFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroceryWithFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroceryWithFirebase/Pods-GroceryWithFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +93,9 @@
 				ABF7285B1E70962F00212912 /* LaunchScreen.storyboard */,
 				ABF7285E1E70962F00212912 /* Info.plist */,
 				ABF728641E70968200212912 /* GoogleService-Info (2).plist */,
+				ABF728661E70A8EB00212912 /* CategoryTableViewController.swift */,
+				ABF728681E70A90300212912 /* ListTableViewController.swift */,
+				ABF7286A1E70A92800212912 /* AddCategoryViewController.swift */,
 			);
 			path = GroceryWithFirebase;
 			sourceTree = "<group>";
@@ -217,7 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABF728551E70962F00212912 /* ViewController.swift in Sources */,
+				ABF7286B1E70A92800212912 /* AddCategoryViewController.swift in Sources */,
 				ABF728531E70962F00212912 /* AppDelegate.swift in Sources */,
+				ABF728671E70A8EB00212912 /* CategoryTableViewController.swift in Sources */,
+				ABF728691E70A90300212912 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +395,7 @@
 				ABF728631E70962F00212912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
