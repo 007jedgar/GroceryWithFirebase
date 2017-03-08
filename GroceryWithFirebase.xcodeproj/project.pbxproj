@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94196D6CCA8490357E5693FE /* Pods_GroceryWithFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D27873DD76884214A9B5312 /* Pods_GroceryWithFirebase.framework */; };
 		ABF728531E70962F00212912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF728521E70962F00212912 /* AppDelegate.swift */; };
 		ABF728551E70962F00212912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF728541E70962F00212912 /* ViewController.swift */; };
 		ABF728581E70962F00212912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF728561E70962F00212912 /* Main.storyboard */; };
 		ABF7285A1E70962F00212912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF728591E70962F00212912 /* Assets.xcassets */; };
 		ABF7285D1E70962F00212912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF7285B1E70962F00212912 /* LaunchScreen.storyboard */; };
+		ABF728651E70968200212912 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = ABF728641E70968200212912 /* GoogleService-Info (2).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D27873DD76884214A9B5312 /* Pods_GroceryWithFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroceryWithFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85DD14F01A0A69A5519692A9 /* Pods-GroceryWithFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroceryWithFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroceryWithFirebase/Pods-GroceryWithFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		ABF7284F1E70962F00212912 /* GroceryWithFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryWithFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF728521E70962F00212912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABF728541E70962F00212912 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		ABF728591E70962F00212912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABF7285C1E70962F00212912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABF7285E1E70962F00212912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF728641E70968200212912 /* GoogleService-Info (2).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (2).plist"; sourceTree = "<group>"; };
+		E0C2C386F77DED923080A468 /* Pods-GroceryWithFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroceryWithFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroceryWithFirebase/Pods-GroceryWithFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94196D6CCA8490357E5693FE /* Pods_GroceryWithFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06DA0D512662C89D1B89CAFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0C2C386F77DED923080A468 /* Pods-GroceryWithFirebase.debug.xcconfig */,
+				85DD14F01A0A69A5519692A9 /* Pods-GroceryWithFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5028C164C63850873AE70A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D27873DD76884214A9B5312 /* Pods_GroceryWithFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ABF728461E70962E00212912 = {
 			isa = PBXGroup;
 			children = (
 				ABF728511E70962F00212912 /* GroceryWithFirebase */,
 				ABF728501E70962F00212912 /* Products */,
+				06DA0D512662C89D1B89CAFD /* Pods */,
+				A5028C164C63850873AE70A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				ABF728591E70962F00212912 /* Assets.xcassets */,
 				ABF7285B1E70962F00212912 /* LaunchScreen.storyboard */,
 				ABF7285E1E70962F00212912 /* Info.plist */,
+				ABF728641E70968200212912 /* GoogleService-Info (2).plist */,
 			);
 			path = GroceryWithFirebase;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABF728611E70962F00212912 /* Build configuration list for PBXNativeTarget "GroceryWithFirebase" */;
 			buildPhases = (
+				86C68AA98F127A7C163BA392 /* [CP] Check Pods Manifest.lock */,
 				ABF7284B1E70962F00212912 /* Sources */,
 				ABF7284C1E70962F00212912 /* Frameworks */,
 				ABF7284D1E70962F00212912 /* Resources */,
+				1477FB5D3D23FEE10943EC75 /* [CP] Embed Pods Frameworks */,
+				A5EAFEC0B8989EE0311F9F6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF728651E70968200212912 /* GoogleService-Info (2).plist in Resources */,
 				ABF7285D1E70962F00212912 /* LaunchScreen.storyboard in Resources */,
 				ABF7285A1E70962F00212912 /* Assets.xcassets in Resources */,
 				ABF728581E70962F00212912 /* Main.storyboard in Resources */,
@@ -131,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1477FB5D3D23FEE10943EC75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroceryWithFirebase/Pods-GroceryWithFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C68AA98F127A7C163BA392 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5EAFEC0B8989EE0311F9F6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroceryWithFirebase/Pods-GroceryWithFirebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABF7284B1E70962F00212912 /* Sources */ = {
@@ -259,6 +338,7 @@
 		};
 		ABF728621E70962F00212912 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C2C386F77DED923080A468 /* Pods-GroceryWithFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JVCXTUSEZC;
@@ -272,6 +352,7 @@
 		};
 		ABF728631E70962F00212912 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85DD14F01A0A69A5519692A9 /* Pods-GroceryWithFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JVCXTUSEZC;
