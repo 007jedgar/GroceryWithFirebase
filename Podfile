@@ -11,5 +11,5 @@ target 'GroceryWithFirebase' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Kingfisher', '~> 3.0'
-
+pod 'Firebase/Auth'
 end

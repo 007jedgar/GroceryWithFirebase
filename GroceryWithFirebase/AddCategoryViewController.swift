@@ -7,29 +7,37 @@
 //
 
 import UIKit
+import FirebaseDatabase
+
 
 class AddCategoryViewController: UIViewController {
 
+
+    @IBOutlet weak var newCategoryField: UITextField!
+    
+    let category = Category()
+    var ref: FIRDatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ref = FIRDatabase.database().reference()
+
         // Do any additional setup after loading the view.
     }
+    @IBAction func saveToDatabase(_ sender: UIButton) {
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let category = Category()
+        if let newCat = newCategoryField.text{
+        category.title = newCat
+        } else {
+            print("not string")
+        }
+        
+        ref?.child("Categories").childByAutoId().setValue(category.title)
+
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

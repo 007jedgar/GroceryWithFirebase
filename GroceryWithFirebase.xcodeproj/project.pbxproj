@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		94196D6CCA8490357E5693FE /* Pods_GroceryWithFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D27873DD76884214A9B5312 /* Pods_GroceryWithFirebase.framework */; };
+		AB967B6E1E70AD140081A573 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB967B6D1E70AD140081A573 /* Category.swift */; };
 		ABF728531E70962F00212912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF728521E70962F00212912 /* AppDelegate.swift */; };
 		ABF728551E70962F00212912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF728541E70962F00212912 /* ViewController.swift */; };
 		ABF728581E70962F00212912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF728561E70962F00212912 /* Main.storyboard */; };
 		ABF7285A1E70962F00212912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF728591E70962F00212912 /* Assets.xcassets */; };
 		ABF7285D1E70962F00212912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF7285B1E70962F00212912 /* LaunchScreen.storyboard */; };
-		ABF728651E70968200212912 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = ABF728641E70968200212912 /* GoogleService-Info (2).plist */; };
+		ABF728651E70968200212912 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABF728641E70968200212912 /* GoogleService-Info.plist */; };
 		ABF728671E70A8EB00212912 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF728661E70A8EB00212912 /* CategoryTableViewController.swift */; };
 		ABF728691E70A90300212912 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF728681E70A90300212912 /* ListTableViewController.swift */; };
 		ABF7286B1E70A92800212912 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7286A1E70A92800212912 /* AddCategoryViewController.swift */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		5D27873DD76884214A9B5312 /* Pods_GroceryWithFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroceryWithFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DD14F01A0A69A5519692A9 /* Pods-GroceryWithFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroceryWithFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroceryWithFirebase/Pods-GroceryWithFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		AB967B6D1E70AD140081A573 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		AB967B6F1E71AF280081A573 /* apiFun.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = apiFun.playground; sourceTree = "<group>"; };
 		ABF7284F1E70962F00212912 /* GroceryWithFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryWithFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF728521E70962F00212912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABF728541E70962F00212912 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +32,7 @@
 		ABF728591E70962F00212912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABF7285C1E70962F00212912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABF7285E1E70962F00212912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABF728641E70968200212912 /* GoogleService-Info (2).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (2).plist"; sourceTree = "<group>"; };
+		ABF728641E70968200212912 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABF728661E70A8EB00212912 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		ABF728681E70A90300212912 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		ABF7286A1E70A92800212912 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
@@ -92,10 +95,12 @@
 				ABF728591E70962F00212912 /* Assets.xcassets */,
 				ABF7285B1E70962F00212912 /* LaunchScreen.storyboard */,
 				ABF7285E1E70962F00212912 /* Info.plist */,
-				ABF728641E70968200212912 /* GoogleService-Info (2).plist */,
+				ABF728641E70968200212912 /* GoogleService-Info.plist */,
 				ABF728661E70A8EB00212912 /* CategoryTableViewController.swift */,
-				ABF728681E70A90300212912 /* ListTableViewController.swift */,
 				ABF7286A1E70A92800212912 /* AddCategoryViewController.swift */,
+				ABF728681E70A90300212912 /* ListTableViewController.swift */,
+				AB967B6D1E70AD140081A573 /* Category.swift */,
+				AB967B6F1E71AF280081A573 /* apiFun.playground */,
 			);
 			path = GroceryWithFirebase;
 			sourceTree = "<group>";
@@ -163,7 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABF728651E70968200212912 /* GoogleService-Info (2).plist in Resources */,
+				ABF728651E70968200212912 /* GoogleService-Info.plist in Resources */,
 				ABF7285D1E70962F00212912 /* LaunchScreen.storyboard in Resources */,
 				ABF7285A1E70962F00212912 /* Assets.xcassets in Resources */,
 				ABF728581E70962F00212912 /* Main.storyboard in Resources */,
@@ -230,6 +235,7 @@
 				ABF728531E70962F00212912 /* AppDelegate.swift in Sources */,
 				ABF728671E70A8EB00212912 /* CategoryTableViewController.swift in Sources */,
 				ABF728691E70A90300212912 /* ListTableViewController.swift in Sources */,
+				AB967B6E1E70AD140081A573 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
